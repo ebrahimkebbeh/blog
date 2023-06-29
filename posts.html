@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAyBE</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                MAyBE
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for posts, users, and inspiration">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-picture">
+                    <img src="./images/profilepic1.jpg">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <main>
+        <div class="container">
+            <div class="left">
+                <a href="profile.html" class="profile">
+                <img class="profile-picture" src="./images/profilepic1.jpg" alt="Profile Picture">
+                </a>
+                <div class="handle">
+                    <h4>Stephen A. Smith</h4>
+                    <p class="text-muted">
+                        @stephenasmith
+                    </p>   
+                </div>
+                </a> -->
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <a href="profile.html" class="profile">
+                <div class="profile-picture">
+                    <img src="./images/profilepic1.jpg" alt="Profile Picture">
+                </div>
+                <div class="handle">
+                    <h4>Stephen A. Smith</h4>
+                    <p class="text-muted">
+                        @stephenasmith
+                    </p>   
+                </div>
+                </a>
+
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span> <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small> </i></span> <h3>Notifications</h3>
+
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profilepic2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Michael Jordan</b> Commented on your post!
+                                    <small class="text-muted">21 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profilepic3.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Dwight Howard</b> Tagged you in a comment!
+                                    <small class="text-muted">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profilepic4.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Lebron James</b> Liked your post!
+                                    <small class="text-muted">21 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profilepic5.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Stephen Curry</b> Accepted your follow request!
+                                    <small class="text-muted">36 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profilepic6.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Kevin Durant</b> Replied to your comment!
+                                    <small class="text-muted">3 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profilepic7.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>KD's Burner Account</b> Replied to you comment!
+                                    <small class="text-muted">1 WEEK AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span> <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span> <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-palette"></i></span> <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span> <h3>Settings</h3>
+                    </a>
+                </div>
+
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+
+
+            </div>
+
+        <div class="middle">
+            <div class="stories">
+                <div class="story">
+                    <div class="profile-picture">
+                        <img src="./images/profilepic1.jpg" alt="You story here!">
+                    </div>
+                    <p class="name">Your Story</p>
+                </div>
+                <div class="story">
+                    <div class="profile-picture">
+                        <img src="./images/profilepic4.jpg" alt="LeBron Ends Jason Terry's Career!">
+                    </div>
+                    <p class="name">LeBron James</p>
+                </div>
+                <div class="story">
+                    <div class="profile-picture">
+                        <img src="./images/profilepic10.jpg" alt="Aaron Gordon Dunks on Landry Shamet!">
+                    </div>
+                    <p class="name">Aaron Gordon</p>
+                </div>
+                <div class="story">
+                    <div class="profile-picture">
+                        <img src="./images/profilepic5.jpg" alt="Steph Curry with the Dagger!">
+                    </div>
+                    <p class="name">Stephen Curry</p>
+                </div>
+                <div class="story">
+                    <div class="profile-picture">
+                        <img src="./images/profilepic6.jpg" alt="KD makes Daniel Gafford Touch the Earth!">
+                    </div>
+                    <p class="name">Kevin Durant</p>
+                </div>
+                <div class="story">
+                    <div class="profile-picture">
+                        <img src="./images/profilepic9.avif" alt="PBev Taunts LeBron After Layup!">
+                    </div>
+                    <p class="name">Patrick Beverley</p>
+                </div>
+                <div class="story">
+                    <div class="profile-picture">
+                        <img src="./images/profilepic11.jpg" alt="Luka Hits a Step-Back Game-Winning Three!">
+                    </div>
+                    <p class="name">Luka Doncic</p>
+                </div>
+                <div class="story">
+                    <div class="profile-picture">
+                        <img src="./images/profilepic12.jpg" alt="Ja Dunks on Kevin Love!">
+                    </div>
+                    <p class="name">Ja Morant</p>
+                </div>
+            </div>
+
+            <form class="create-post">
+                <div class="profile-picture">
+                    <img src="./images/profilepic1.jpg" alt="">
+                </div>
+                <input type="text" placeholder="What's on your mind Stephen?" id="create-post">
+                <input type="submit" value="Post" class="btn btn-primary">
+            </form>
+
+            <div class="feeds">
+
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="./images/profilepic13.jpg" alt="Devin Booker">
+                            </div>
+                            <div class="info">
+                                <h3>Devin Booker</h3>
+                                <small>Phoenix, AZ 25 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="./images/feedpic1.png" alt="Kevin Durant and Teammate Devin Booker">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="./images/profilepic7.jpg"></span>
+                        <span><img src="./images/profilepic6.jpg"></span>
+                        <span><img src="./images/profilepic3.jpg"></span>
+                        <p>Liked by <b>Kevin Durant's Burner</b> and <b>34,232 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>Devin Booker</b> Run that back turbo... 
+                            <span class="hashtag">#wellbeback</span></p>
+                    </div>
+                    <div class="commentstext-muted">View all 1,344 comments</div>
+                </div>
+
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="./images/profilepic4.jpg" alt="LeBron James">
+                            </div>
+                            <div class="info">
+                                <h3>LeBron James</h3>
+                                <small>Amalfi Coast, Italy 5 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="./images/feedpic3.png" alt="Lebron in Italy">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="./images/profilepic7.jpg"></span>
+                        <span><img src="./images/profilepic6.jpg"></span>
+                        <span><img src="./images/profilepic3.jpg"></span>
+                        <p>Liked by <b>Kevin Durant</b> and <b>73,832 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>LeBron James</b> Some well deserved rest 
+                            <span class="hashtag">#hibernatingking</span></p>
+                    </div>
+                    <div class="commentstext-muted">View all 21,876 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="./images/profilepic5.jpg" alt="Steph Curry">
+                            </div>
+                            <div class="info">
+                                <h3>Stephen Curry</h3>
+                                <small>Oakland, CA 10 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="./images/feedpic4.webp" alt="Warriors Celebrating Championship">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="./images/profilepic15.jpg"></span>
+                        <span><img src="./images/profilepic16.jpg"></span>
+                        <span><img src="./images/profilepic17.webp"></span>
+                        <p>Liked by <b>Klay Thompson</b> and <b>85,172 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>Steph Curry</b> Reminiscing... 
+                            <span class="hashtag">#DUBNationstandup</span></p>
+                    </div>
+                    <div class="commentstext-muted">View all 24,219 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="./images/profilepic14.jpg" alt="Paul George">
+                            </div>
+                            <div class="info">
+                                <h3>Paul George</h3>
+                                <small>Los Angeles, CA 34 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="./images/feedpic2.jpg" alt="Kawhi Leonard and Teammate Paul George">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="./images/profilepic3.jpg"></span>
+                        <span><img src="./images/profilepic12.jpg"></span>
+                        <span><img src="./images/profilepic2.jpg"></span>
+                        <p>Liked by <b>Dwight Howard</b> and <b>48,830 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>Paul George</b> Run that back turbo... 
+                            <span class="hashtag">#clipsrunLA</span></p>
+                    </div>
+                    <div class="commentstext-muted">View all 7,583 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="./images/profilepic13.jpg" alt="Devin Booker">
+                            </div>
+                            <div class="info">
+                                <h3>Devin Booker</h3>
+                                <small>Phoenix, AZ 25 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="./images/feedpic1.png" alt="Kevin Durant and Teammate Devin Booker">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="./images/profilepic7.jpg"></span>
+                        <span><img src="./images/profilepic6.jpg"></span>
+                        <span><img src="./images/profilepic3.jpg"></span>
+                        <p>Liked by <b>Kevin Durant's Burner</b> and <b>34,232 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>Devin Booker</b> Run that back turbo... 
+                            <span class="hashtag">#wellbeback</span></p>
+                    </div>
+                    <div class="commentstext-muted">View all 1,344 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="./images/profilepic13.jpg" alt="Devin Booker">
+                            </div>
+                            <div class="info">
+                                <h3>Devin Booker</h3>
+                                <small>Phoenix, AZ 25 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="./images/feedpic1.png" alt="Kevin Durant and Teammate Devin Booker">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="./images/profilepic7.jpg"></span>
+                        <span><img src="./images/profilepic6.jpg"></span>
+                        <span><img src="./images/profilepic3.jpg"></span>
+                        <p>Liked by <b>Kevin Durant's Burner</b> and <b>34,232 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>Devin Booker</b> Run that back turbo... 
+                            <span class="hashtag">#wellbeback</span></p>
+                    </div>
+                    <div class="commentstext-muted">View all 1,344 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="./images/profilepic13.jpg" alt="Devin Booker">
+                            </div>
+                            <div class="info">
+                                <h3>Devin Booker</h3>
+                                <small>Phoenix, AZ 25 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="./images/feedpic1.png" alt="Kevin Durant and Teammate Devin Booker">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="./images/profilepic7.jpg"></span>
+                        <span><img src="./images/profilepic6.jpg"></span>
+                        <span><img src="./images/profilepic3.jpg"></span>
+                        <p>Liked by <b>Kevin Durant's Burner</b> and <b>34,232 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>Devin Booker</b> Run that back turbo... 
+                            <span class="hashtag">#wellbeback</span></p>
+                    </div>
+                    <div class="commentstext-muted">View all 1,344 comments</div>
+                </div>
+            </div>
+
+            <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae commodi nobis veritatis corrupti quia necessitatibus aspernatur cupiditate. Repellendus, corporis velit pariatur quam recusandae vel amet quibusdam nihil sed, blanditiis modi. -->
+        </div>
+
+
+        <div class="right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempora illum molestias odio fuga, ut autem dignissimos nihil quibusdam! Voluptates deserunt debitis numquam possimus vel explicabo dicta eveniet laborum cupiditate.
+
+        </div>
+        </div>
+        
+    </main>
+
+</body>
+</html>
+
