@@ -1,9 +1,17 @@
 <script src="navbar.js"></script>
+<script src="auth.js"></script>
+
 <body>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
   body {
     background-color: #f1f6ff;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    background: (--color-light);
+    overflow-x: hidden;
+}
   }
 
   #login-form {
@@ -16,7 +24,7 @@
   }
 
   h1 {
-    color: #280cdb;
+    color: hsl(118, 73%, 52%);
     margin-bottom: 30px;
     text-align: center;
   }
@@ -38,21 +46,21 @@
   }
 
   input[type="submit"] {
-    background-color: #2229b7;
+    background-color: hsl(118, 73%, 52%);
     border: none;
     border-radius: 5px;
-    color: #ddda2a;
+    color: black;
     cursor: pointer;
     padding: 10px;
     width: 100%;
   }
 
   input[type="submit"]:hover {
-    background-color: #dc492f;
+    background-color: gray;
   }
 
   .error-message {
-    color: #f00;
+    color: rgb(242, 237, 237);
     margin-top: 20px;
     text-align: center;
   }
@@ -74,35 +82,37 @@
    <br>
    <br>
    <br>
-    <h1>Login Page</h1>
+    <h1>Login</h1>
   
-    <form id="login-form">
+   
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required>
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
-      <input type="submit" value="Login">
+      <input type="button" id="login_button" value="Login">
       <div class="error-message" id="error-message"></div>
-    </form>
+    
   
     <script>
-      const form = document.getElementById('login-form');
-      const errorMessage = document.getElementById('error-message');
-  
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-  
-        const username = form.username.value;
-        const password = form.password.value;
-  
-        if (username === '' || password === '') {
-          errorMessage.textContent = 'Please enter both username and password.';
-        } else if (username !== 'java' || password !== 'script') {
-          errorMessage.textContent = 'Incorrect username or password.';
-        } else {
-          // Redirect to dashboard page
-          window.location.href = 'index.html';
-        }
-      });
+    function handleFormSubmit(event) {
+   
+   
+   // Get form input values
+   const username = document.getElementById("username").value;
+   
+   const password = document.getElementById("password").value;
+   
+   
+   
+   login({
+    username : username,
+    
+    password : password
+  });
+   // Clear form inputs
+   document.getElementById("username").value = "";
+   
+   document.getElementById("password").value = "";};
+   login_button.onclick =handleFormSubmit;
     </script>
   </body>
