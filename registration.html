@@ -1,10 +1,24 @@
+<head>
 <script src="navbar.js"></script>
-<body>
-    <div class="banner" >
-    <h1>User Registration</h1>
+<script src="scripts/auth.js"></script>
+<script>
+    if (isLoggedIn() === true) window.location.replace("scripts/posts");
+</script>
+
+    
 		<title>User Registration</title>
 		<style>
-            
+      
+      .banner {
+        position:absolute;
+        left:0;
+        top:0;
+        z-index: -1;
+        width: 100%;
+      }
+       .banner img{
+        width: 100%;
+       }
       h1 {
       text-align: center;
       color: #1d58e2;
@@ -66,7 +80,13 @@
     }
   
 		</style>
-	  </head>
+
+  </head>
+  <body>
+
+  
+  <div class="banner"><img src="nbateamslogo.jpg" alt=""></div>  
+    <h1>User Registration</h1>
     <form>
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
