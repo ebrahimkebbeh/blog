@@ -6,7 +6,13 @@
     <title>MAyBE</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="auth.js"></script>
 </head>
+<style>
+    .navbar{
+        margin-top: 120px;
+    }
+</style>
 <body>
     <nav>
         <div class="container">
@@ -17,40 +23,27 @@
                 <i class="uil uil-search"></i>
                 <input type="search" placeholder="Search for posts, users, and inspiration">
             </div>
-            <div class="create">
-                <label class="btn btn-primary" for="create-post">Create</label>
-                <div class="profile-picture">
-                    <img src="./images/profilepic1.jpg">
-                </div>
+            <div class="create" id="logout_button">
+                <label class="btn btn-primary" for="create-post">Logout</label>
             </div>
         </div>
     </nav>
-
-    <!-- <main>
-        <div class="container">
-            <div class="left">
-                <a href="profile.html" class="profile">
-                <img class="profile-picture" src="./images/profilepic1.jpg" alt="Profile Picture">
-                </a>
-                <div class="handle">
-                    <h4>Stephen A. Smith</h4>
-                    <p class="text-muted">
-                        @stephenasmith
-                    </p>   
-                </div>
-                </a> -->
-
+   
+   
     <main>
+        <header>
+            <script src="navbar.js"></script>
+        </header>
         <div class="container">
             <div class="left">
                 <a href="profile.html" class="profile">
                 <div class="profile-picture">
-                    <img src="./images/profilepic1.jpg">
+                   <div> <img src="./images/profilepic1.jpg"></div>
                 </div>
                 <div class="handle">
-                    <h4>Stephen A. Smith</h4>
+                    <h4>Naruto Uzumaki</h4>
                     <p class="text-muted">
-                        @stephenasmith
+                        @narutothehokage
                     </p>   
                 </div>
                 </a>
@@ -64,72 +57,11 @@
                     </a>
                     <a class="menu-item" id="notifications">
                         <span><i class="uil uil-bell"><small class="notification-count">9+</small> </i></span> <h3>Notifications</h3>
-
-                        <div class="notifications-popup">
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="./images/profilepic2.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Michael Jordan</b> Commented on your post!
-                                    <small class="text-muted">21 MINUTES AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="./images/profilepic3.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Dwight Howard</b> Tagged you in a comment!
-                                    <small class="text-muted">2 HOURS AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="./images/profilepic4.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Lebron James</b> Liked your post!
-                                    <small class="text-muted">21 HOURS AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="./images/profilepic5.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Stephen Curry</b> Accepted your follow request!
-                                    <small class="text-muted">36 HOURS AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="./images/profilepic6.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Kevin Durant</b> Replied to your comment!
-                                    <small class="text-muted">3 DAYS AGO</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-picture">
-                                    <img src="./images/profilepic7.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>KD's Burner Account</b> Replied to you comment!
-                                    <small class="text-muted">1 WEEK AGO</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="menu-item" id="messages-notifications">
+                     <a class="menu-item" id="messages-notifications">
                         <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span> <h3>Messages</h3>
                     </a>
                     <a class="menu-item">
                         <span><i class="uil uil-bookmark"></i></span> <h3>Bookmarks</h3>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-palette"></i></span> <h3>Theme</h3>
                     </a>
                     <a class="menu-item">
                         <span><i class="uil uil-setting"></i></span> <h3>Settings</h3>
@@ -193,23 +125,22 @@
                 </div>
             </div>
 
-            <form class="create-post">
+            <div class="create-post">
                 <div class="profile-picture">
                     <img src="./images/profilepic1.jpg" alt="">
                 </div>
-                <input type="text" placeholder="What's on your mind Stephen?" id="create-post">
-                <input type="submit" value="Post" class="btn btn-primary">
-            </form>
+                <input type="text" placeholder="What's on your mind Naruto?" id="createPost">
+                <input type="button" id="postButton" value="Post" class="btn btn-primary">
+            </div>
 
-            <div class="feeds">
+            <div class="feeds" id="feeds">
 
 
                 <div class="feed">
                     <div class="head">
                         <div class="user">
-                            <div class="profile-picture">
-                                <img src="./images/profilepic13.jpg" alt="Devin Booker">
-                            </div>
+                           
+                            
                             <div class="info">
                                 <h3>Devin Booker</h3>
                                 <small>Phoenix, AZ 25 MINUTES AGO</small>
@@ -601,6 +532,85 @@
         </div>
         
     </main>
+<script>
+   if(!isLoggedIn()){
+    location = "login.html"
+   } 
+    function getPost () {
+        const loginData = getLoginData();
+const options = { 
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${loginData.token}`,
+    },
+   
+};
 
+return fetch(apiBaseURL + "/api/posts", options)
+    .then(response => response.json())
+    .then(data => {
+       console.log(data)
+       feeds = document.getElementById("feeds")
+       feeds.innerHTML = ""
+       data.forEach(item => {
+        
+       
+       feeds.innerHTML+=`<div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="info">
+                                <h3>${item.username}</h3>
+                                <small>${item.createdAt}</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="caption">
+                        <p>${item.text}</p>
+                            
+                    </div>
+                     <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>`
+            });  
+            
+
+        return data;
+    });
+}
+ getPost()
+
+function sendPost(){
+    const loginData = getLoginData();
+    fetch(apiBaseURL+"/api/posts",{
+        method: "POST",
+        body: JSON.stringify( {
+            text : createPost.value
+        }),
+        headers:{
+            "Content-Type": "application/json",
+             Authorization: `Bearer ${loginData.token}`,
+        }
+
+    })
+    .then(r=>r.json()).then(data=>{
+        console.log(data)
+        getPost()
+    })
+}
+postButton.onclick = sendPost;
+logout_button.onclick = logout;
+</script>
 </body>
+
 </html>

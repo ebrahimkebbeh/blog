@@ -1,9 +1,7 @@
 <head>
 <script src="navbar.js"></script>
-<script src="scripts/auth.js"></script>
-<script>
-    if (isLoggedIn() === true) window.location.replace("scripts/posts");
-</script>
+<script src="auth.js"></script>
+
 
     
 		<title>User Registration</title>
@@ -87,11 +85,11 @@
   
   <div class="banner"><img src="nbateamslogo.jpg" alt=""></div>  
     <h1>User Registration</h1>
-    <form>
+    
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="fullName" name="name" required>
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="username" name="email" required>
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
       <div class="radio-group">
@@ -102,6 +100,31 @@
         <label><input type="radio" name="find-out" value="social-media">Social media</label>
         <label><input type="radio" name="find-out" value="other">Other</label>
       </div>
-      <input type="submit" value="Register">
-    </form>
+      <input type="button" id="register_button" value="Register">
+    
+    <script> 
+    
+    function handleFormSubmit(event) {
+   
+      // Get form input values
+      const username = document.getElementById("username").value;
+      const fullName = document.getElementById("fullName").value;
+      const password = document.getElementById("password").value;
+      
+      
+      
+      register({
+       username : username,
+       fullName : fullName,
+       password : password
+     });
+      // Clear form inputs
+      document.getElementById("username").value = "";
+      
+      document.getElementById("password").value = "";
+    }
+    
+      register_button.onclick =handleFormSubmit;
+      </script>
+
   </body>
