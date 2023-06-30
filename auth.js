@@ -48,7 +48,24 @@ function login (loginData) {
             return loginData;
         });
 }
+function register (regData) {
 
+    const options = { 
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(regData),
+    };
+
+    return fetch(apiBaseURL + "/api/users", options)
+        .then(response => response.json())
+        .then(data => {
+           console.log(data)
+           location = "login.html"
+            return data;
+        });
+}
 
 // This is the `logout()` function you will use for any logout button
 // which you may include in various pages in your app. Again, READ this
@@ -78,6 +95,6 @@ function logout () {
             // error with the fetch request above.
 
             window.localStorage.removeItem("login-data");  // remove login data from LocalStorage
-            window.location.assign("/");  // redirect back to landing page
+            window.location.assign("login.html");  // redirect back to landing page
         });
 }
